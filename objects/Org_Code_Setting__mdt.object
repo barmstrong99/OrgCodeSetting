@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Various runtime settings used in code; including Apex Classes, Apex Triggers, Flows and Process Builders.</description>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is this code setting record Active?</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Is this code setting record Active?</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DeactivateCodeEmail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to send an email if the deactivate code checkbox is checked.  This to notify the users that the code is deactivated.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Used to send an email if the deactivate code checkbox is checked.  This to notify the users that the code is deactivated.</inlineHelpText>
+        <label>Deactivate Code Email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DeactivateCode__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used in a test at the beginning of logic to see if the code should be deactivated.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Used in a test at the beginning of logic to see if the code should be deactivated.</inlineHelpText>
+        <label>Deactivate Code</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DebugEmailAddress__c</fullName>
+        <description>An email address to be used for the debug email logic.  Of data type email.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>An email address to be used for the debug email logic.  Of data type Email.</inlineHelpText>
+        <label>Debug Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DebugEmail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used in tests to determine if a debug email should be sent.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Used in tests to determine if a debug email should be sent.</inlineHelpText>
+        <label>Debug Email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DebugFlags__c</fullName>
+        <description>Additional debug flags or values.  Length 80.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Additional debug flags or values.  Length 80.</inlineHelpText>
+        <label>Debug Flags</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DebugSystem__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Debug - System debug statement logic.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Debug - System debug statement logic.</inlineHelpText>
+        <label>Debug System</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Debug__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Debug</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Debug</inlineHelpText>
+        <label>Debug</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Used to put a description on the code setting record.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Used to put a description on the code setting record.</inlineHelpText>
+        <label>Description</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>General__c</fullName>
+        <description>General text field of length 80.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>General text field of length 80.</inlineHelpText>
+        <label>General</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OverrideEmailAddress__c</fullName>
+        <description>A single override email address of type email.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A single override email address of type email.</inlineHelpText>
+        <label>Override Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SandboxOnly__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Only run code in a Sandbox.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Only run code in a Sandbox.</inlineHelpText>
+        <label>Sandbox Only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Version__c</fullName>
+        <description>The version of the code setting record.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The version of the code setting record.</inlineHelpText>
+        <label>Version</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1.0</fullName>
+                    <default>false</default>
+                    <label>1.0</label>
+                </value>
+                <value>
+                    <fullName>2.0</fullName>
+                    <default>true</default>
+                    <label>2.0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Org Code Setting</label>
+    <listViews>
+        <fullName>Org_Code_Settings</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>Active__c</columns>
+        <columns>DeactivateCode__c</columns>
+        <columns>Debug__c</columns>
+        <columns>DebugEmail__c</columns>
+        <columns>DebugEmailAddress__c</columns>
+        <columns>DebugFlags__c</columns>
+        <columns>OverrideEmailAddress__c</columns>
+        <columns>General__c</columns>
+        <columns>SandboxOnly__c</columns>
+        <columns>Version__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Org Code Settings</label>
+    </listViews>
+    <pluralLabel>Org Code Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
